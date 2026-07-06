@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f2f5;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  width: 280px;
+  height: 340px;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 25px;
+}
+
+.card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.top-section {
+  background: #4a6ed8;
+  height: 100px;
+}
+
+.profile-img {
+  height: 150px;
+  width: 125px;
+  border-radius: 50%;
+  border: 4px solid rgb(196, 196, 233);
+  margin-top: -50px;
+  object-fit: cover;
+}
+
+h2 {
+  margin: 10px 0 0 0;
+}
+
+p {
+  color: gray;
+  margin: 5px 0 15px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon {
+  transition: transform 0.15s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2) rotate(10deg);
+}
